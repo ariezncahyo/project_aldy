@@ -1,0 +1,266 @@
+/* START aturan khusus */
+/* reset */
+html, body, blockquote, div, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+li, tbody, td, tfoot, th, thead, tr, button, a, b,  br, em, i, img, small, span,
+strong, sub, sup, legend, fieldset {
+        margin: 0;
+        padding: 0;
+        border:0 none;
+        outline:0 none;
+        font-size:100%;
+        list-style: none;
+}
+
+article, aside, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+/* CLEARFIX */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility:hidden; } 
+.clearfix { display: inline-block; } 
+* html .clearfix { height:1%; } 
+.clearfix { display:block; } 
+/* CLEARFIX */
+
+
+body{
+    font-family: arial;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+a {
+    color: #000000;
+    text-decoration:none;
+}
+
+/* END aturan khusus */
+
+
+/* Start header */
+#header{
+    height: 100px;
+    background-color: #60abf8;
+    border: 5px solid brown;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.2em;
+}
+/* End header */
+
+/* Start Menu */
+#menu{
+    margin: -50px auto;
+    text-align: center;
+    width: 1200px;
+}
+
+#menu ul{
+    margin : 0 auto;
+}
+
+#menu ul li{
+    float: left;
+}
+
+#menu ul li a{
+    display: block;
+    border: 5px solid brown;
+    margin: 5px;
+    padding: 20px 10px;
+    width: 200px;
+    font: bold 20px gadget, sans-serif;
+    background-color:white;
+    border-radius: 50px 50px;
+}
+
+/* End Menu */
+
+/* START outer */
+#outer{
+    margin: 50px auto;
+    width: 1100px;
+}
+
+#outer>aside {
+    float: right;
+    width: 280px;
+}
+
+/* END outer */
+
+/* Begin content wrapper */
+#content-wrapper {
+    width: 780px;
+    float: left;
+}
+
+#content-wrapper>section:first-of-type {
+    margin-bottom: 30px;
+}
+
+#content-wrapper>section:first-of-type div {
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+/* detail gambar */
+#content-wrapper>section:last-of-type {
+    background-color: #60abf8;
+    border-radius: 10px;
+}
+
+#content-wrapper>section:last-of-type ul {
+    padding: 10px;
+    margin: 0 auto;
+    width: 750px;
+}
+
+#content-wrapper>section:last-of-type ul li {
+   
+   width: 22%;
+   float: left;
+   margin: 10px;
+   position: relative;
+   padding: 30px 0;
+   font-weight: bold;
+}
+
+#content-wrapper>section:last-of-type ul li div {
+    border: 1px solid black;
+}
+
+#content-wrapper>section:last-of-type ul li form {
+    background-color: darkcyan;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+#content-wrapper>section:last-of-type ul li img {
+    width: 100%;
+}
+
+#content-wrapper>section:last-of-type ul li div span:first-child {
+    position: absolute;
+    padding: 5px;
+    /* background-color: lightskyblue; */
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    top: 0;
+    left: 8px;
+    width: 80%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#content-wrapper>section:last-of-type ul li span:last-child {
+    background-color: chartreuse;
+    width: 100%;
+    display: block;
+}
+
+#content-wrapper>section:last-of-type ul li a {
+    position: absolute;
+    bottom: 105px;
+    left: 1px;
+    width: 25%;
+    text-align: center;
+    padding: 3px 0;
+    background-color: yellow;
+}
+
+
+/* sidebar */
+
+aside section {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+aside section>a {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: 1.2em;
+    color: rgb(153, 0, 0);
+}
+
+aside section>a:hover {
+    text-decoration: underline;
+}
+
+aside section>span{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*  begin keranjang */
+aside section article {
+    display: inline-block;
+    padding: 15px;
+    position: absolute;
+    top: 10px;
+}
+
+aside section article span {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+aside section article>a {
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+aside section article>a:first-of-type {
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+}
+
+aside section article>a:last-of-type {
+    /* background-color: #00cccc; */
+    background-color: red;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+}
+
+aside section:first-child {
+    position: relative;
+    /* background-color: darkseagreen; */
+    background-color: #60abf8;
+    height: 170px;
+}
+
+aside section:last-child {
+    background-color: chartreuse;
+}
+
+/* end keranjang */
+
+
+
+
+
+
+

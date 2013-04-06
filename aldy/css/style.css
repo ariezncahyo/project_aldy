@@ -1,0 +1,158 @@
+/****************** START ATURAN ****************/
+/* START aturan khusus */
+/* reset */
+html, body, blockquote, div, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+li, tbody, td, tfoot, th, thead, tr, button, a, b,  br, em, i, img, small, span,
+strong, sub, sup, legend, fieldset {
+        margin: 0;
+        padding: 0;
+        border:0 none;
+        outline:0 none;
+        font-size:100%;
+        list-style: none;
+}
+
+article, aside, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+/* CLEARFIX */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility:hidden; } 
+.clearfix { display: inline-block; } 
+* html .clearfix { height:1%; } 
+.clearfix { display:block; } 
+/* CLEARFIX */
+
+body{
+    font-family: calibri, sans-serif;
+    background-color: white;
+    padding: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+a {
+    color: #000000;
+    text-decoration:none;
+}
+
+
+/***************** END ATURAN ********************/
+
+/**************** START KETERANGAN ***************/
+#keterangan{
+    border : 5px solid black;
+    border-radius: 10px; 
+    padding: 10px;
+    margin-bottom: 10px;
+    /* background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6+ */
+    /*background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);  /* FF3.6+ */
+    /* background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%)*/
+    background-color: #60abf8;
+    
+}
+
+/**************** END KETERANGAN *****************/
+
+
+
+
+/***************** START NAVIGASI *****************/
+#navigasi{
+    width: 150px;
+    border:3px solid black;
+    float: left;
+    font:bold 14px gadget, sans-serif;
+    border-radius: 10px;
+    background: black;
+}
+
+#navigasi ul li a{
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 2px;
+    text-align: center;
+    /* background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background-color: #60abf8;
+}
+/***************** END NAVIGASI ********************/
+
+
+
+
+/***************** START ISI **********************/
+#outer{
+    margin-left:160px;
+    border:3px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+}
+
+#header{
+    border: 3px solid coral;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+/* START BAGIAN KATALOG */
+
+/* Kataolog / form upload */
+#fm_upload {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    font-size: 1.2em;
+    width: 40%;
+    background-color: chartreuse;
+    border-radius: 10px;
+}
+
+#fm_upload h3 {
+    text-align: center
+}
+
+#tbl_barang {
+    padding-bottom: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.dataTables_filter{
+    margin-bottom: 10px;
+}
+
+#tbl_barang table {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+#tbl_barang h3 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2em;
+    font-family: gadget,sans-serif;
+}
+
+#tbl_barang table tr th {
+    background-color: #60abf8;
+}
+
+#tbl_barang table tr {
+    border: 1px solid brown;
+}
+
+/* END BAGIAN KATALOG */
+
+/***************** END ISI ************************/
+
