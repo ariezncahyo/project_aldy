@@ -25,6 +25,12 @@ article, aside, footer, header, hgroup, menu, nav, section {
 
 body{
     font-family: arial;
+    /*background-color: #EAEBFF;*/
+}
+
+table tr th {
+    border: 1px solid brown;
+    background-color: #60abf8;
 }
 
 
@@ -37,6 +43,37 @@ img {
 a {
     color: #000000;
     text-decoration:none;
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+sup {
+    color: red;
+}
+
+input[type="text"] {
+    background-color: white;
+    height: 20px;
+}
+
+input[type="submit"] {
+    height: 30px;
+    background-color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: bisque;
+}
+
+input:focus, textarea:focus {
+    background-color: bisque;
 }
 
 /* END aturan khusus */
@@ -82,9 +119,20 @@ a {
 /* End Menu */
 
 /* START outer */
+#bg-site { 
+    width: 70%;
+    margin: -60px auto;
+    border-radius: 15px;
+    background-color: #EAEBFF;
+    box-shadow: 6px 6px 6px #DADCFF;
+    border: 4px groove black;
+    padding-top: 30px;
+    z-index: -10;
+}
+
 #outer{
     margin: 50px auto;
-    width: 1100px;
+    width: 1000px;
 }
 
 #outer>aside {
@@ -96,7 +144,7 @@ a {
 
 /* Begin content wrapper */
 #content-wrapper {
-    width: 780px;
+    width: 700px;
     float: left;
 }
 
@@ -105,7 +153,6 @@ a {
 }
 
 #content-wrapper>section:first-of-type div {
-    border: 1px solid blue;
     padding: 10px;
 }
 
@@ -113,26 +160,33 @@ a {
 #content-wrapper>section:last-of-type {
     background-color: #60abf8;
     border-radius: 10px;
+    border: 4px groove brown;
+    padding: 5px;
+    box-shadow: 3px 3px 3px #f6f6f6;
 }
 
 #content-wrapper>section:last-of-type ul {
     padding: 10px;
     margin: 0 auto;
-    width: 750px;
+    width: 650px;
 }
 
 #content-wrapper>section:last-of-type ul li {
-   
-   width: 22%;
+   width: 40%;
    float: left;
    margin: 10px;
    position: relative;
-   padding: 30px 0;
+   padding:20px;
    font-weight: bold;
 }
 
 #content-wrapper>section:last-of-type ul li div {
     border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
 }
 
 #content-wrapper>section:last-of-type ul li form {
@@ -142,22 +196,27 @@ a {
     font-size: 0.8em;
 }
 
-#content-wrapper>section:last-of-type ul li img {
-    width: 100%;
+#content-wrapper>section:last-of-type ul li form input {
+    margin-left: 20px;
+}
+
+#content-wrapper>section:last-of-type ul li img {  
+    height: 250px;
+    width: 250px
 }
 
 #content-wrapper>section:last-of-type ul li div span:first-child {
-    position: absolute;
+    
     padding: 5px;
     /* background-color: lightskyblue; */
-    background-color: white;
+    background-color: #cccc00;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    top: 0;
-    left: 8px;
-    width: 80%;
+    width: 90%;
     border: 1px solid black;
     text-align: center;
+    display: block;
+    margin: 5px auto;
 }
 
 #content-wrapper>section:last-of-type ul li span:last-child {
@@ -166,21 +225,26 @@ a {
     display: block;
 }
 
-#content-wrapper>section:last-of-type ul li a {
-    position: absolute;
-    bottom: 105px;
-    left: 1px;
-    width: 25%;
+#content-wrapper>section:last-of-type ul li a { 
+    width: 90%;
+    padding: 3px;
     text-align: center;
-    padding: 3px 0;
+    margin: 5px auto;
+    display: block;
     background-color: yellow;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
+#content-wrapper>section:last-of-type ul li a:hover {
+    background-color: #710909;
+    color: white;
+}
 
 /* sidebar */
 
 aside section {
-    border: 1px solid black;
+    border: 3px groove brown;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -206,6 +270,7 @@ aside section>span{
     text-align: center;
     font-weight: bold;
 }
+
 
 /*  begin keranjang */
 aside section article {
@@ -239,10 +304,11 @@ aside section article>a:first-of-type {
 
 aside section article>a:last-of-type {
     /* background-color: #00cccc; */
-    background-color: red;
+    background-color: #b81900;
     padding: 5px;
     width: 50px;
     text-align: center;
+    color: white;
 }
 
 aside section:first-child {
@@ -253,14 +319,109 @@ aside section:first-child {
 }
 
 aside section:last-child {
-    background-color: chartreuse;
+    background-color: #C6E746;
 }
 
 /* end keranjang */
 
+/* begin login */
+#outer>aside:first-of-type {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #DADCFF;
+}
+
+#outer>aside:first-of-type h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+#outer>aside:first-of-type table{
+    margin: 5px;
+} 
+
+
+/* end login */
+
+
+
+/* START SPECIAL */
+.hilang {
+    display: none;
+}
+
+#slidebisnis {
+    border: 6px solid black;
+}
+
+
+/* END SPECIAL */
 
 
 
 
 
+/* START pendaftaran */
+#content-wrapper h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
 
+#fm-daftar {
+    background-color: #DADCFF;
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px groove black;
+}
+/* END pendaftaran */
+
+/*********** START tentang kami **********/
+#ttg {
+    border: 3px groove black;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 300px;
+    background-color: #DADCFF;
+}
+
+#cr_psn_byr {
+    border: 3px groove black;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 300px;
+    background-color: #C6E746;
+}
+
+#pesanan_konsumen table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    width: 100%;
+}
+
+#pesanan_konsumen table tr td {
+    border: 1px solid black;
+}
+/********* END tentang kami **************/
+
+
+/*********** START ISI *******************/
+#isi {
+    border-radius: 10px;
+    background-color: #60abf8;
+    border: 4px groove black;
+    padding: 10px;
+}
+
+#isi form table tr td {
+    padding: 10px;
+}
+
+/************ END ISI *********************/
+
+
+/***************** Start View pemesanan ************/
+
+
+
+/***************** End View pemesanan ***************/

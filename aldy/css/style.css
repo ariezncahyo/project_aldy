@@ -10,6 +10,7 @@ strong, sub, sup, legend, fieldset {
         outline:0 none;
         font-size:100%;
         list-style: none;
+        border-collapse: collapse;
 }
 
 article, aside, footer, header, hgroup, menu, nav, section { 
@@ -35,9 +36,33 @@ img {
     width: auto\9; /* ie8 */
 }
 
+table tr th {
+    border: 1px solid brown;
+    background-color: #8699a4;
+}
+
+h1 {
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
 a {
     color: #000000;
     text-decoration:none;
+}
+
+input[type="submit"] {
+    border: 2px solid black;
+    background-color: white;
+    padding: 3px 5px;
+}
+
+input[type="submit"]:hover {
+    border: 2px groove wheat;
 }
 
 
@@ -95,7 +120,6 @@ a {
 }
 
 #header{
-    border: 3px solid coral;
     margin-bottom: 5px;
 }
 
@@ -108,12 +132,12 @@ a {
 
 /* Kataolog / form upload */
 #fm_upload {
-    border: 1px solid black;
+    border: 3px solid black;
     padding: 10px;
     margin: 20px;
     font-size: 1.2em;
     width: 40%;
-    background-color: chartreuse;
+    background-color: #4096ee;
     border-radius: 10px;
 }
 
@@ -123,8 +147,7 @@ a {
 
 #tbl_barang {
     padding-bottom: 10px;
-    width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .dataTables_filter{
@@ -144,15 +167,30 @@ a {
     font-family: gadget,sans-serif;
 }
 
-#tbl_barang table tr th {
-    background-color: #60abf8;
-}
 
 #tbl_barang table tr {
     border: 1px solid brown;
 }
 
 /* END BAGIAN KATALOG */
+
+/* BAGIAN PEMESANAN */
+#tabel_deal_pesan {
+    border: 1px solid black;
+    margin: 10px auto;
+}
+
+#tabel_deal_pesan table {
+    width: 100%;
+}
+
+#tabel_deal_pesan table tr td {
+    border: 1px solid black;
+}
+
+
+/* BAGIAN PEMESANAN */
+
 
 /***************** END ISI ************************/
 

@@ -19,13 +19,14 @@
     <body>
         <div id="keterangan">
            berisi logut, hak akses , anda berada di menu apa
+           <a href="hal_konsumen.php"></a>
         </div>
         <div id="navigasi">
             <ul>
                 <li><a href="index.php?berkas=home/home">HOME</a></li>
                 <li><a href="index.php?berkas=barang/data_barang">KATALOG</a></li>
-                <li><a href="index.php">PEMESANAN</a></li>
-                <li><a href="index.php">PEMBAYARAN</a></li>
+                <li><a href="index.php?berkas=pemesanan/admin_pemesanan">PEMESANAN</a></li>
+                <li><a href="index.php?berkas=pembayaran/admin_pembayaran">PEMBAYARAN</a></li>
             </ul>
         </div>
         <div id="outer">

@@ -16,6 +16,17 @@ $(document).ready(function(){
  $('.auto_tabel').dataTable({
      "sPaginationType":"full_numbers"
  });
+ 
+ //config for delete confirmation
+ $('.delete_id').click(function(){
+     var x = confirm("apa anda yakin");
+     //jika x benar maka kembalikan nilai benar, jika tidak sebalikanya
+     if(x==true){
+        return true;
+     }else{
+         return false;
+     }
+ });
     
     
 });
